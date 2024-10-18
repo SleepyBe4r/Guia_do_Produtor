@@ -6,6 +6,12 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  --bs-custom-1: cadetblue;
+  --bs-custom-2: rgb(141, 95, 160);
+  --bs-custom-3: rgb(95, 160, 127);
+  --bs-custom-4: rgb(217, 221, 182);
+  --bs-custom-5: rgb(160, 130, 95);
+
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -7437,6 +7443,26 @@ textarea.form-control-lg {
 
 .bg-gradient {
   background-image: var(--bs-gradient) !important;
+}
+
+.bg-custom-1 {
+  background-color: var(--bs-custom-1) !important;
+}
+
+.bg-custom-2 {
+  background-color: var(--bs-custom-2) !important;
+}
+
+.bg-custom-3 {
+  background-color: var(--bs-custom-3) !important;
+}
+
+.bg-custom-4 {
+  background-color: var(--bs-custom-4) !important;
+}
+
+.bg-custom-5 {
+  background-color: var(--bs-custom-5) !important;
 }
 
 .user-select-all {

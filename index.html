@@ -10,15 +10,9 @@
     <link rel="stylesheet" href="./assets/libraries/fontawesome-free-6.6.0-web/css/all.css">
     <!-- AOS -->
     <link rel="stylesheet" href="./assets/libraries/aos-master/dist/aos.css">
-    <style>.loader {
-        position: fixed;
-        left: 0px;
-        top: 0px;
-        width: 100%;
-        height: 100%;
-        z-index: 9999;
-        background: url('./assets/Chunk.gif') 50% 50% no-repeat rgb(249,249,249);
-    }</style>
+
+    <link rel="stylesheet" href="assets/styles/index.css">
+
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
 </head>
@@ -51,206 +45,313 @@
         <!-- Carousel Start -->
         <div id="carouselExampleIndicators" class="carousel slide" style="max-height: 80vh;" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
+            <div class="carousel-item active">
                 <img src="https://picsum.photos/id/17/1280/720" style="max-height: 80vh;" class="d-block w-100 img-fluid" alt="...">
-              </div>
-              <div class="carousel-item">
+            </div>
+            <div class="carousel-item">
                 <img src="https://picsum.photos/1280/720" style="max-height: 80vh;" class="d-block w-100 img-fluid" alt="...">
-              </div>
-              <div class="carousel-item">
+            </div>
+            <div class="carousel-item">
                 <img src="https://picsum.photos/1280/720" style="max-height: 80vh;" class="d-block w-100 img-fluid" alt="...">
-              </div>
+            </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
             </button>
         </div>
         <!-- Carousel End -->
 
         <!-- Producers Start -->
-            <div class="container pt-3">
-                <div class="row text-center justify-content-center">
-                    <h1 style="font-family: 'Berkshire Swash';">Produtores</h1>
-                    <hr class="w-25 rounded" style="height: 5px; background-color: black; opacity: 1;">
-                </div>
+        <div class="container pt-3">
+            <div class="row text-center justify-content-center">
+                <h1>Produtores</h1>
+                <hr class="w-25 rounded normal-bar" >
+            </div>
 
-                <div data-aos="fade-right" data-aos-delay="50" class="row position-relative">
-                    <div  style="position: absolute; top: 5vh; left: 5vh; width: 90%; height: 90%; background-color: cadetblue; z-index: -1;"></div>
-                    
-                    <div class="pl-4 col-sm-4 position-relative" style="top: 2.5vh;"><img style="max-height: 90%;" class="d-block w-100 img-fluid" src="https://picsum.photos/200/200" alt=""></div>
-                    <div class="p-4 col-sm-8 align-text-bottom position-relative" style="top: 2.5vh;">
-                        <div class="row">
-                            <h1 style="font-family: 'Berkshire Swash';">cereais</h1>
-                        </div>
-                        <div class="row">
-                            <h2>Nome:</h2>
-                            <h2>Produto:</h2>
-                            <h2>Local:</h2>
-                        </div>                        
-                    </div>
-                </div>
+            <div data-aos="fade-right" data-aos-delay="50" class="row position-relative">
+                <div class="bg-custom-1 shadow bg-producer-float"></div>
                 
-                <div data-aos="fade-left" data-aos-delay="50" class="row position-relative">
-                    <div style="position: absolute; top: 5vh; left: 5vh; width: 90%; height: 90%; background-color: rgb(141, 95, 160); z-index: -1;"></div>
-                    <div style="top: 5vh;" class="p-4 col-sm-8 align-text-bottom position-relative text-end">
-                        <div class="row">
-                            <h1 style="font-family: 'Berkshire Swash';">frutas</h1>
-                        </div>
-                        <div class="row">
-                            <h2>Nome:</h2>
-                            <h2>Produto:</h2>
-                            <h2>Local:</h2>
-                        </div>                        
+                <div class="pl-4 col-sm-4 position-relative " style="top: 2.5vh;"><img style="max-height: 90%;" class="d-block w-100 img-fluid shadow" src="https://picsum.photos/200/200" alt=""></div>
+                <div class="p-4 col-sm-8 align-text-bottom position-relative" style="top: 2.5vh;">
+                    <div class="row">
+                        <h1>cereais</h1>
                     </div>
-                    <div style="top: 2.5vh;" class="pl-4 col-sm-4 position-relative"><img style="max-height: 90%;" class="d-block w-100 img-fluid" src="https://picsum.photos/200/200" alt=""></div>
-                </div>                
-
-                <div data-aos="fade-right" data-aos-delay="50" class="row position-relative">
-                    <div  style="position: absolute; top: 5vh; left: 5vh; width: 90%; height: 90%; background-color: rgb(95, 160, 127); z-index: -1;"></div>
-                    <div  style="top: 2.5vh;" class="pl-4 col-sm-4 position-relative"><img style="max-height: 90%;" class="d-block w-100 img-fluid" src="https://picsum.photos/200/200" alt=""></div>
-                    <div  style="top: 5vh;" class="p-4 col-sm-8 align-text-bottom position-relative">
-                        <div class="row">
-                            <h1 style="font-family: 'Berkshire Swash';">vegetais</h1>
-                        </div>
-                        <div class="row">
-                            <h2>Nome:</h2>
-                            <h2>Produto:</h2>
-                            <h2>Local:</h2>
-                        </div>                        
-                    </div>
-                </div>
-
-                <div data-aos="fade-left" data-aos-delay="50" class="row position-relative">
-                    <div style="position: absolute; top: 5vh; left: 5vh; width: 90%; height: 90%; background-color: rgb(217, 221, 182); z-index: -1;"></div>
-                    <div style="top: 5vh;" class="p-4 col-sm-8 align-text-bottom position-relative text-end">
-                        <div class="row">
-                            <h1 style="font-family: 'Berkshire Swash';">laticínios</h1>
-                        </div>
-                        <div class="row">
-                            <h2>Nome:</h2>
-                            <h2>Produto:</h2>
-                            <h2>Local:</h2>
-                        </div>                        
-                    </div>
-                    <div style="top: 2.5vh;" class="pl-4 col-sm-4 position-relative"><img style="max-height: 90%;" class="d-block w-100 img-fluid" src="https://picsum.photos/200/200" alt=""></div>
-                </div>      
-
-                <div data-aos="fade-right" data-aos-delay="50" class="row position-relative" >
-                    <div style="position: absolute; top: 5vh; left: 5vh; width: 90%; height: 90%; background-color: rgb(160, 130, 95); z-index: -1;"></div>
-                    <div style="top: 2.5vh;" class="pl-4 col-sm-4 position-relative"><img style="max-height: 90%;" class="d-block w-100 img-fluid" src="https://picsum.photos/200/200" alt=""></div>
-                    <div style="top: 5vh;" class="p-4 col-sm-8 align-text-bottom position-relative">
-                        <div class="row">
-                            <h1 style="font-family: 'Berkshire Swash';">proteínas</h1>
-                        </div>
-                        <div class="row">
-                            <h2>Nome:</h2>
-                            <h2>Produto:</h2>
-                            <h2>Local:</h2>
-                        </div>                        
-                    </div>
+                    <div class="row">
+                        <h2>Nome:</h2>
+                        <h2>Produto:</h2>
+                        <h2>Local:</h2>
+                    </div>                        
                 </div>
             </div>
+            
+            <div data-aos="fade-left" data-aos-delay="50" class="row position-relative">
+                <div class="bg-custom-2 shadow bg-producer-float" ></div>
+                <div style="top: 5vh;" class="p-4 col-sm-8 align-text-bottom position-relative text-end">
+                    <div class="row">
+                        <h1>frutas</h1>
+                    </div>
+                    <div class="row">
+                        <h2>Nome:</h2>
+                        <h2>Produto:</h2>
+                        <h2>Local:</h2>
+                    </div>                        
+                </div>
+                <div style="top: 2.5vh;" class="pl-4 col-sm-4 position-relative"><img style="max-height: 90%;" class="d-block w-100 img-fluid shadow" src="https://picsum.photos/200/200" alt=""></div>
+            </div>                
+
+            <div data-aos="fade-right" data-aos-delay="50" class="row position-relative">
+                <div class="bg-custom-3 shadow bg-producer-float"></div>
+                <div style="top: 2.5vh;" class="pl-4 col-sm-4 position-relative"><img style="max-height: 90%;" class="d-block w-100 img-fluid shadow" src="https://picsum.photos/200/200" alt=""></div>
+                <div style="top: 5vh;" class="p-4 col-sm-8 align-text-bottom position-relative">
+                    <div class="row">
+                        <h1>vegetais</h1>
+                    </div>
+                    <div class="row">
+                        <h2>Nome:</h2>
+                        <h2>Produto:</h2>
+                        <h2>Local:</h2>
+                    </div>                        
+                </div>
+            </div>
+
+            <div data-aos="fade-left" data-aos-delay="50" class="row position-relative">
+                <div class="bg-custom-4 shadow bg-producer-float"></div>
+                <div style="top: 5vh;" class="p-4 col-sm-8 align-text-bottom position-relative text-end">
+                    <div class="row">
+                        <h1 >laticínios</h1>
+                    </div>
+                    <div class="row">
+                        <h2>Nome:</h2>
+                        <h2>Produto:</h2>
+                        <h2>Local:</h2>
+                    </div>                        
+                </div>
+                <div style="top: 2.5vh;" class="pl-4 col-sm-4 position-relative"><img style="max-height: 90%;" class="d-block w-100 img-fluid shadow" src="https://picsum.photos/200/200" alt=""></div>
+            </div>      
+
+            <div data-aos="fade-right" data-aos-delay="50" class="row position-relative" >
+                <div class="bg-custom-5 shadow bg-producer-float"></div>
+                <div style="top: 2.5vh;" class="pl-4 col-sm-4 position-relative"><img style="max-height: 90%;" class="d-block w-100 img-fluid shadow" src="https://picsum.photos/200/200" alt=""></div>
+                <div style="top: 5vh;" class="p-4 col-sm-8 align-text-bottom position-relative">
+                    <div class="row">
+                        <h1 >proteínas</h1>
+                    </div>
+                    <div class="row">
+                        <h2>Nome:</h2>
+                        <h2>Produto:</h2>
+                        <h2>Local:</h2>
+                    </div>                        
+                </div>
+            </div>
+        </div>
         <!-- Producers End -->
         
         <!-- About Us Start-->
-            <div class="content pt-3">
-                <div class="row text-center justify-content-center">
-                    <h1 style="font-family: 'Berkshire Swash';">Sobre Nós</h1>
-                    <hr class="w-25 rounded" style="height: 5px; background-color: black; opacity: 1;">
-                </div>
-
-                <div data-aos="fade" data-aos-delay="50" class="row position-relative" style="min-height: 50vh;">
-                    <div id="about_Us_1" onclick="abrir_Sobre_Nos(about_us_1.id)" style="position: absolute; top: 5%; left: 5%; width: 5%; height: 90%; background-color: rgb(160, 130, 95); transition: all 0.3s;">
-                    </div>                    
-                    <div id="about_Us_2" onclick="abrir_Sobre_Nos(about_us_2.id)" style="position: absolute; top: 5%; left: 10%; width: 5%; height: 90%; background-color: rgb(95, 160, 127); transition: all 0.3s;">
-                    </div>                    
-                    <div id="about_Us_3" onclick="abrir_Sobre_Nos(about_us_3.id)" style="position: absolute; top: 5%; left: 15%; width: 5%; height: 90%; background-color: cadetblue; transition: all 0.3s;">
-                    </div>                    
-                    <div id="about_Us_4" onclick="abrir_Sobre_Nos(about_us_4.id)" style="position: absolute; top: 5%; left: 20%; width: 75%; height: 90%; background-color: rgb(141, 95, 160); transition: all 0.3s;">
-                    </div>                    
-                </div>
-                
+        <div class="content pt-3">
+            <div class="row text-center justify-content-center">
+                <h1 >Sobre Nós</h1>
+                <hr class="w-25 rounded normal-bar" >
             </div>
+
+            <div data-aos="fade" data-aos-delay="50" class="row position-relative " style="min-height: 50vh;">
+                <div class="bg-custom-1 shadow" id="about_Us_1" onclick="abrir_Sobre_Nos(0)">
+                </div>                    
+                <div class="bg-custom-2 shadow" id="about_Us_2" onclick="abrir_Sobre_Nos(1)">
+                </div>                    
+                <div class="bg-custom-3 shadow" id="about_Us_3" onclick="abrir_Sobre_Nos(2)">
+                </div>                    
+                <div class="bg-custom-4 shadow" id="about_Us_4" onclick="abrir_Sobre_Nos(3)">
+                </div>                    
+            </div>
+            
+        </div>
         <!-- About Us End-->
 
-        <!-- Team -->
+        <!-- Team Start -->
+        <div class="container pt-3">
+            <div class="row text-center justify-content-center">
+                <h1 >Equipe</h1>
+                <hr class="w-25 rounded normal-bar" >
+            </div>
+
+            <div class="row text-center justify-content-center mt-4">
+                <div class="col-md-auto col-lg-s align-items-center text-center justify-content-center flex-wrap d-flex pb-3">
+                    <h5 class="m-0" >Professores</h5>
+                    <hr class="w-75 rounded m-0" style="height: 2px; background-color: black; opacity: 1;">
+                </div>
+                <div class="col-md-auto col-lg-s align-items-center text-center justify-content-center flex-wrap d-flex pb-3">
+                    <h5 class="m-0" >Alunos</h5>
+                    <hr class="w-75 rounded m-0" style="height: 2px; background-color: black; opacity: 1;">
+                </div>
+            </div>
+
+            <div id="carrosel_Prof" class="row time_carrosel p-2" style="flex-wrap: nowrap; overflow-x: hidden; max-height: 450px;">
+                <div class="col-md-3 col-lg-s text-center team shadow m-4">
+                    <div class="h-75 position-relative overflow-hidden m-2" style="border-radius: 10px">
+                        <img class="img-fluid w-100" src="https://picsum.photos/720/1280" alt="" draggable="false" />
+                    </div>                    
+                    <h2>Caike</h2>                                            
+                </div>
+                <div class="col-md-3 col-lg-s text-center team shadow m-4">
+                    <div class="h-75 position-relative overflow-hidden m-2" style="border-radius: 10px">
+                        <img class="img-fluid w-100" src="https://picsum.photos/720/1280" alt="" draggable="false" />
+                    </div>                    
+                    <h2>Caike</h2>                                            
+                </div>
+                <div class="col-md-3 col-lg-s text-center team shadow m-4">
+                    <div class="h-75 position-relative overflow-hidden m-2" style="border-radius: 10px">
+                        <img class="img-fluid w-100" src="https://picsum.photos/720/1280" alt="" draggable="false" />
+                    </div>                    
+                    <h2>Caike</h2>                                            
+                </div>
+                <div class="col-md-3 col-lg-s text-center team shadow m-4">
+                    <div class="h-75 position-relative overflow-hidden m-2" style="border-radius: 10px">
+                        <img class="img-fluid w-100" src="https://picsum.photos/720/1280" alt="" draggable="false" />
+                    </div>                    
+                    <h2>Caike</h2>                                            
+                </div>
+                <div class="col-md-3 col-lg-s text-center team shadow m-4">
+                    <div class="h-75 position-relative overflow-hidden m-2" style="border-radius: 10px">
+                        <img class="img-fluid w-100" src="https://picsum.photos/720/1280" alt="" draggable="false" />
+                    </div>                    
+                    <h2>Caike</h2>                                            
+                </div>
+                <div class="col-md-3 col-lg-s text-center team shadow m-4">
+                    <div class="h-75 position-relative overflow-hidden m-2" style="border-radius: 10px">
+                        <img class="img-fluid w-100" src="https://picsum.photos/720/1280" alt="" draggable="false" />
+                    </div>                    
+                    <h2>Caike</h2>                                            
+                </div>
+                <div class="col-md-3 col-lg-s text-center team shadow m-4">
+                    <div class="h-75 position-relative overflow-hidden m-2" style="border-radius: 10px">
+                        <img class="img-fluid w-100" src="https://picsum.photos/720/1280" alt="" draggable="false" />
+                    </div>                    
+                    <h2>Caike</h2>                                            
+                </div>
+            </div>   
+            
+            <div id="carrosel_Alunos" class="row time_carrosel p-2" style="flex-wrap: nowrap; overflow-x: hidden; max-height: 450px;">
+                <div class="col-md-3 col-lg-s text-center team shadow m-4">
+                    <div class="h-75 position-relative overflow-hidden m-2" style="border-radius: 10px">
+                        <img class="img-fluid w-100" src="https://picsum.photos/720/1280" alt="" draggable="false" />
+                    </div>                    
+                    <h2>Caike</h2>                                            
+                </div>
+                <div class="col-md-3 col-lg-s text-center team shadow m-4">
+                    <div class="h-75 position-relative overflow-hidden m-2" style="border-radius: 10px">
+                        <img class="img-fluid w-100" src="https://picsum.photos/720/1280" alt="" draggable="false" />
+                    </div>                    
+                    <h2>Caike</h2>                                            
+                </div>
+                <div class="col-md-3 col-lg-s text-center team shadow m-4">
+                    <div class="h-75 position-relative overflow-hidden m-2" style="border-radius: 10px">
+                        <img class="img-fluid w-100" src="https://picsum.photos/720/1280" alt="" draggable="false" />
+                    </div>                    
+                    <h2>Caike</h2>                                            
+                </div>
+                <div class="col-md-3 col-lg-s text-center team shadow m-4">
+                    <div class="h-75 position-relative overflow-hidden m-2" style="border-radius: 10px">
+                        <img class="img-fluid w-100" src="https://picsum.photos/720/1280" alt="" draggable="false" />
+                    </div>                    
+                    <h2>Caike</h2>                                            
+                </div>
+                <div class="col-md-3 col-lg-s text-center team shadow m-4">
+                    <div class="h-75 position-relative overflow-hidden m-2" style="border-radius: 10px">
+                        <img class="img-fluid w-100" src="https://picsum.photos/720/1280" alt="" draggable="false" />
+                    </div>                    
+                    <h2>Caike</h2>                                            
+                </div>
+                <div class="col-md-3 col-lg-s text-center team shadow m-4">
+                    <div class="h-75 position-relative overflow-hidden m-2" style="border-radius: 10px">
+                        <img class="img-fluid w-100" src="https://picsum.photos/720/1280" alt="" draggable="false" />
+                    </div>                    
+                    <h2>Caike</h2>                                            
+                </div>
+                <div class="col-md-3 col-lg-s text-center team shadow m-4">
+                    <div class="h-75 position-relative overflow-hidden m-2" style="border-radius: 10px">
+                        <img class="img-fluid w-100" src="https://picsum.photos/720/1280" alt="" draggable="false" />
+                    </div>                    
+                    <h2>Caike</h2>                                            
+                </div>
+            </div> 
+        </div>
+        <!-- Team End -->
+
         <!-- Contact Start-->         
-            <div class="container-fluid py-5">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-7 mb-5 mb-lg-0">
-                            <div class="row text-center justify-content-center">
-                                <h1 style="font-family: 'Berkshire Swash';">Contate-nos</h1>
-                                <hr class="w-25 rounded" style="height: 5px; background-color: black; opacity: 1;">
-                            </div>
-                            <p>
-                                Nesse tópico você pode cadastrar seu filho para que a próxma vaga disponível.
-                                Dessa maneira você poderá garantir:
-
-                            </p>
-                            <ul class="list-inline m-0">
-                                <li class="py-2">
-                                <i class="fa fa-check text-success mr-3"></i>Desconto de 10% na matrícula e nas 2 primeiras mensalidades!
-                                </li>
-                                <li class="py-2">
-                                <i class="fa fa-check text-success mr-3"></i>Desconto de 15% na matrícula e nas 5 primeiras mensalidades!
-                                </li>
-
-                        </ul>
-
+        <div class="container-fluid py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 mb-5 mb-lg-0">
+                        <div class="row text-center justify-content-center">
+                            <h1 >Contate-nos</h1>
+                            <hr class="w-25 rounded" >
                         </div>
-                        <div class="col-lg-5">
-                            <div class="card border-0">
-                                <div class="card-header bg-secondary text-center p-4">
-                                <h1 class="text-white m-0">Contate-nos</h1>
+                        <p>
+                            Nesse tópico você pode cadastrar seu filho para que a próxma vaga disponível.
+                            Dessa maneira você poderá garantir:
+
+                        </p>
+                        <ul class="list-inline m-0">
+                            <li class="py-2">
+                            <i class="fa fa-check text-success mr-3"></i>Desconto de 10% na matrícula e nas 2 primeiras mensalidades!
+                            </li>
+                            <li class="py-2">
+                            <i class="fa fa-check text-success mr-3"></i>Desconto de 15% na matrícula e nas 5 primeiras mensalidades!
+                            </li>
+
+                    </ul>
+
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card border-0 shadow">
+                            <div class="card-header bg-secondary text-center p-4">
+                            <h1 class="text-white m-0">Contate-nos</h1>
+                            </div>
+                            <div class="card-body rounded-bottom bg-primary p-5">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control border-0 p-3 m-2" placeholder="Nome Completo" required="required" />
                                 </div>
-                                <div class="card-body rounded-bottom bg-primary p-5">
-                                <form>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control border-0 p-3 m-2" placeholder="Nome Completo" required="required" />
+                                
+                                <div class="for-group">
+                                    <p>Forma de contato:</p>
+                                    <div class="form-check">
+                                        <input type="radio" onclick="contato_txt.placeholder = 'Email'; contato_txt.type = 'email';" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                                        <label class="form-check-label" for="radio1">Email</label>
                                     </div>
-                                    
-                                    <div class="for-group">
-                                        <p>Forma de contato:</p>
-                                        <div class="form-check">
-                                            <input type="radio" onclick="contato_txt.placeholder = 'Email'; contato_txt.type = 'email';" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
-                                            <label class="form-check-label" for="radio1">Email</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="radio" onclick="contato_txt.placeholder = 'Telefone'; contato_txt.type = 'text';" class="form-check-input" id="radio2" name="optradio" value="option2">
-                                            <label class="form-check-label" for="radio2">Telefone</label>
-                                        </div>
+                                    <div class="form-check">
+                                        <input type="radio" onclick="contato_txt.placeholder = 'Telefone'; contato_txt.type = 'text';" class="form-check-input" id="radio2" name="optradio" value="option2">
+                                        <label class="form-check-label" for="radio2">Telefone</label>
                                     </div>
-                                    <div class="form-group">
-                                        <input id="contato_txt" type="email" class="form-control border-0 p-3 m-2" placeholder="Email" required="required" />                                        
-                                    </div>                                                                    
-                                    <div>
-                                        <button onsubmit="console.log(123456);
-                                        " class="btn btn-secondary border-0 py-3" type="submit">
-                                            Enviar
-                                        </button>
-                                    </div>
-                                </form>
                                 </div>
+                                <div class="form-group">
+                                    <input id="contato_txt" type="email" class="form-control border-0 p-3 m-2" placeholder="Email" required="required" />                                        
+                                </div>                                                                    
+                                <div>
+                                    <button onsubmit="console.log(123456);
+                                    " class="btn btn-secondary border-0 py-3" type="submit">
+                                        Enviar
+                                    </button>
+                                </div>
+                            </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         <!-- Contact End-->         
 
-        <!--  -->
-        <!--  -->
     <!-- Content End -->
 
     <!-- Footer Start -->
@@ -262,88 +363,6 @@
     <!-- AOS -->
         <script src="assets/libraries/aos-master/dist/aos.js"></script>
         <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script>
-            AOS.init();  
-            let scrollRef = 0;
-            $(window).on("resize scroll", function () {
-                // increase value up to 10, then refresh AOS
-                scrollRef <= 10 ? scrollRef++ : AOS.refresh();
-            });
-            $(window).load(function() {
-                $(".loader").fadeOut("slow");
-                window.scrollTo(0, 0);                
-            });
-            const about_us_1 = document.getElementById("about_Us_1");
-            const about_us_2 = document.getElementById("about_Us_2");
-            const about_us_3 = document.getElementById("about_Us_3");
-            const about_us_4 = document.getElementById("about_Us_4");
-
-            about_us_1.addEventListener('click',abrir_Sobre_Nos(about_us_1.id));
-            about_us_2.addEventListener('click',abrir_Sobre_Nos(about_us_2.id));
-            about_us_3.addEventListener('click',abrir_Sobre_Nos(about_us_3.id));
-            about_us_4.addEventListener('click',abrir_Sobre_Nos(about_us_4.id));
-
-            function abrir_Sobre_Nos(id) {
-                
-                switch (id) {
-                    case "about_Us_1":
-                        about_us_1.style.left = "5%"; about_us_1.style.width = "75%"; about_us_1.style.cursor = "";
-                        about_us_1.onmouseenter = null; about_us_1.onmouseleave = null;
-                        
-                        about_us_2.style.left = "80%"; about_us_2.style.width = "5%"; about_us_2.style.cursor = "pointer";
-                        about_us_2.onmouseenter = function () {about_us_2.style.filter = "brightness(95%)";}; about_us_2.onmouseleave = function () {about_us_2.style.filter = "brightness(100%)";};
-                        
-                        about_us_3.style.left = "85%"; about_us_3.style.width = "5%"; about_us_3.style.cursor = "pointer";
-                        about_us_3.onmouseenter = function () {about_us_3.style.filter = "brightness(95%)";}; about_us_3.onmouseleave = function () {about_us_3.style.filter = "brightness(100%)";};
-                        
-                        about_us_4.style.left = "90%"; about_us_4.style.width = "5%"; about_us_4.style.cursor = "pointer";
-                        about_us_4.onmouseenter = function () {about_us_4.style.filter = "brightness(95%)";}; about_us_4.onmouseleave = function () {about_us_4.style.filter = "brightness(100%)";};
-                        break;
-                    case "about_Us_2":
-                        about_us_1.style.left = "5%"; about_us_1.style.width = "5%"; about_us_1.style.cursor = "pointer";
-                        about_us_1.onmouseenter = function () {about_us_1.style.filter = "brightness(95%)";}; about_us_1.onmouseleave = function () {about_us_1.style.filter = "brightness(100%)";};
-                        
-                        about_us_2.style.left = "10%"; about_us_2.style.width = "75%"; about_us_2.style.cursor = "";
-                        about_us_2.onmouseenter = null; about_us_2.onmouseleave = null;
-                        
-                        about_us_3.style.left = "85%"; about_us_3.style.width = "5%"; about_us_3.style.cursor = "pointer";
-                        about_us_3.onmouseenter = function () {about_us_3.style.filter = "brightness(95%)";}; about_us_3.onmouseleave = function () {about_us_3.style.filter = "brightness(100%)";};
-
-                        about_us_4.style.left = "90%"; about_us_4.style.width = "5%"; about_us_4.style.cursor = "pointer";
-                        about_us_4.onmouseenter = function () {about_us_4.style.filter = "brightness(95%)";}; about_us_4.onmouseleave = function () {about_us_4.style.filter = "brightness(100%)";};
-                        break;
-                    case "about_Us_3":
-                        about_us_1.style.left = "5%"; about_us_1.style.width = "5%"; about_us_1.style.cursor = "pointer";
-                        about_us_1.onmouseenter = function () {about_us_1.style.filter = "brightness(95%)";}; about_us_1.onmouseleave = function () {about_us_1.style.filter = "brightness(100%)";};
-                        
-                        about_us_2.style.left = "10%"; about_us_2.style.width = "5%"; about_us_2.style.cursor = "pointer";
-                        about_us_2.onmouseenter = function () {about_us_2.style.filter = "brightness(95%)";}; about_us_2.onmouseleave = function () {about_us_2.style.filter = "brightness(100%)";};
-                        
-                        about_us_3.style.left = "15%"; about_us_3.style.width = "75%"; about_us_3.style.cursor = "";
-                        about_us_3.onmouseenter = null; about_us_3.onmouseleave = null;
-                        
-                        about_us_4.style.left = "90%"; about_us_4.style.width = "5%"; about_us_4.style.cursor = "pointer";
-                        about_us_4.onmouseenter = function () {about_us_4.style.filter = "brightness(95%)";}; about_us_4.onmouseleave = function () {about_us_4.style.filter = "brightness(100%)";};
-                        break;
-                    case "about_Us_4":                        
-                        about_us_1.style.left = "5%"; about_us_1.style.width = "5%"; about_us_1.style.cursor = "pointer";
-                        about_us_1.onmouseenter = function () {about_us_1.style.filter = "brightness(95%)";}; about_us_1.onmouseleave = function () {about_us_1.style.filter = "brightness(100%)";};
-                        
-                        about_us_2.style.left = "10%"; about_us_2.style.width = "5%"; about_us_2.style.cursor = "pointer";
-                        about_us_2.onmouseenter = function () {about_us_2.style.filter = "brightness(95%)";}; about_us_2.onmouseleave = function () {about_us_2.style.filter = "brightness(100%)";};
-                            
-                        about_us_3.style.left = "15%"; about_us_3.style.width = "5%"; about_us_3.style.cursor = "pointer";
-                        about_us_3.onmouseenter = function () {about_us_3.style.filter = "brightness(95%)";}; about_us_3.onmouseleave = function () {about_us_3.style.filter = "brightness(100%)";};
-                        
-                        about_us_4.style.left = "20%"; about_us_4.style.width = "75%"; about_us_4.style.cursor = "";
-                        about_us_4.onmouseenter = null; about_us_4.onmouseleave = null;
-                        
-                        break;
-                    default:
-                        break;
-                }
-                
-            }
-        </script>
+        <script src="assets/scripts/index.js"></script>
 </body>
 </html>

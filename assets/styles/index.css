@@ -1,0 +1,113 @@
+
+*{
+    font-family: 'Berkshire Swash';
+}
+
+:root {
+    --about-us-1-brightness: 90%;
+    --about-us-2-brightness: 90%;
+    --about-us-3-brightness: 90%;
+    --about-us-4-brightness: 100%;
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('./../Chunk.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+
+.normal-bar{
+    height: 5px !important; 
+    background-color: black; 
+    opacity: 1;
+}
+
+/* Header Start  */
+
+/* Header End  */
+
+/* Producers Start  */
+    .bg-producer-float{
+        position: absolute;
+        top: 5vh;
+        left: 5vh;
+        width: 90%;
+        height: 90%; 
+        z-index: -1;
+    }    
+/* Producers End  */
+
+/* About Us Start */
+    #about_Us_1{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 5%; 
+        height: 90%; 
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+    #about_Us_1:hover{
+        filter: brightness(var(--about-us-1-brightness));
+    }
+
+    #about_Us_2{
+        position: absolute; 
+        top: 5%; 
+        left: 10%; 
+        width: 5%; 
+        height: 90%;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+    #about_Us_2:hover{
+        filter: brightness(var(--about-us-2-brightness));
+    }
+
+    #about_Us_3{
+        position: absolute; 
+        top: 5%; 
+        left: 15%; 
+        width: 5%; 
+        height: 90%;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+    #about_Us_3:hover{
+        filter: brightness(var(--about-us-3-brightness));
+    }
+
+    #about_Us_4{
+        position: absolute; 
+        top: 5%; 
+        left: 20%; 
+        width: 75%; 
+        height: 90%;
+        transition: all 0.3s
+    }
+
+    #about_Us_4:hover{
+        filter: brightness(var(--about-us-4-brightness));
+    }
+/* About Us End */
+
+/* Team Start  */
+
+/* Team End  */
+
+/* Contact Start */
+
+/* Contact End */
+
+
+
+/* Footer Start */
+
+/* Footer End  */
