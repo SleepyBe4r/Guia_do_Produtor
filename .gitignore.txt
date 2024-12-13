@@ -1,4 +1,0 @@
-# Ignore all files inside myfolder
-assets/images/equipe/*
-assets/images/plantacao/*
-assets/images/produtores/*
