@@ -1,23 +1,8 @@
-
-*{
-    font-family: 'Berkshire Swash';
-}
-
 :root {
     --about-us-1-brightness: 90%;
     --about-us-2-brightness: 90%;
     --about-us-3-brightness: 90%;
     --about-us-4-brightness: 100%;
-}
-
-.loader {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background: url('./../Chunk.gif') 50% 50% no-repeat rgb(249,249,249);
 }
 
 .normal-bar{
@@ -39,9 +24,31 @@
         height: 90%; 
         z-index: -1;
     }    
+    
+    .producer-image-div{
+        top: 2.5vh;
+    }
+
+    .producer-content-div{
+        top: 5vh;
+    }
+
+    @media only screen and (max-width: 720px) {
+        .producer-image-div{
+            top: 0;
+        }
+    
+        .producer-content-div{
+            top: 0;
+        }
+    }
 /* Producers End  */
 
 /* About Us Start */
+    .about-us-content{
+        min-height: 50vh; 
+        max-height: auto !important;
+    }
     #about_Us_1{
         position: absolute;
         top: 5%;
@@ -50,10 +57,15 @@
         height: 90%; 
         transition: all 0.3s;
         cursor: pointer;
+        overflow: hidden;
     }
 
     #about_Us_1:hover{
         filter: brightness(var(--about-us-1-brightness));
+    }
+
+    #about_Us_1 > *{
+        visibility: hidden;
     }
 
     #about_Us_2{
@@ -64,39 +76,89 @@
         height: 90%;
         transition: all 0.3s;
         cursor: pointer;
+        overflow: hidden;
     }
 
     #about_Us_2:hover{
         filter: brightness(var(--about-us-2-brightness));
     }
 
+    #about_Us_2 > *{
+        visibility: hidden;
+    }
+
     #about_Us_3{
         position: absolute; 
         top: 5%; 
         left: 15%; 
-        width: 5%; 
+        width: 80%; 
         height: 90%;
         transition: all 0.3s;
         cursor: pointer;
+        overflow: hidden;
     }
 
     #about_Us_3:hover{
         filter: brightness(var(--about-us-3-brightness));
     }
+    
+    @media only screen and (max-width: 720px) {
 
-    #about_Us_4{
-        position: absolute; 
-        top: 5%; 
-        left: 20%; 
-        width: 75%; 
-        height: 90%;
-        transition: all 0.3s
+        #about_Us_1{
+            top: 5%;
+            left: 5%;
+            width: 90%; 
+            height: 5%;     
+            overflow-y: scroll;
+        }
+    
+        #about_Us_2{
+            top: 10%; 
+            left: 5%; 
+            width: 90%; 
+            height: 5%;            
+            overflow-y: scroll;
+        }
+    
+        #about_Us_3{
+            top: 15%; 
+            left: 5%; 
+            width: 90%; 
+            height: 75%;                        
+            overflow-y: scroll;
+        }
     }
 
-    #about_Us_4:hover{
-        filter: brightness(var(--about-us-4-brightness));
+    /* About Us End */
+    #txt_Carrosel_Professores,
+    #txt_Carrosel_Alunos{
+        cursor: pointer;
     }
-/* About Us End */
+
+    #txt_Carrosel_Professores > h5,
+    #txt_Carrosel_Alunos > h5{
+        transition: all 0.5s ;
+    }
+
+    #txt_Carrosel_Professores:hover > h5,
+    #txt_Carrosel_Alunos:hover > h5{
+        color: #6c8212 !important;
+    }
+    #txt_Carrosel_Professores > hr,
+    #txt_Carrosel_Alunos > hr{
+        transition: all 0.5s ;
+        max-width: 100px;
+    }
+    #txt_Carrosel_Professores:hover > hr,
+    #txt_Carrosel_Alunos:hover > hr{
+        background-color: #6c8212 !important;
+    }
+
+    #carrosel_Prof,
+    #carrosel_Alunos{
+        overflow:hidden;
+        flex-wrap: nowrap;
+    }
 
 /* Team Start  */
 

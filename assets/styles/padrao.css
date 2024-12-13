@@ -1,0 +1,104 @@
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto/Roboto-Regular.ttf'); 
+  font-weight: normal;
+}
+
+:root {
+    --bs-custom-1: #fbad1c;
+    --bs-custom-2: #fac657;
+    --bs-custom-3: #6c8212;
+    --bs-custom-4: #8cac64;
+    --bs-custom-5: #c9bb9b;
+    --bs-font-custom: "Roboto",sans-serif;
+}
+
+* {    
+  font-family: var(--bs-font-custom) !important;  
+}
+
+body{
+  overflow-x: hidden !important;
+}
+
+.bg-custom-1 {
+    background-color: var(--bs-custom-1) !important;
+}
+
+.bg-custom-2 {
+    background-color: var(--bs-custom-2) !important;    
+}
+
+.bg-custom-3 {
+    background-color: var(--bs-custom-3) !important;
+}
+
+.bg-custom-4 {
+    background-color: var(--bs-custom-4) !important;
+}
+
+.bg-custom-5 {
+    background-color: var(--bs-custom-5) !important;
+}
+
+.btn-custom-1 {
+    color: #fff;
+    background-color: #fbad1c;
+    border-color: #fbad1c;
+}
+  .btn-custom-1:hover {
+    color: #fff;
+    background-color: #dd9510;
+    border-color: #dd9510;
+}
+  .btn-check:focus + .btn-custom-1, .btn-custom-1:focus {
+    color: #fff;
+    background-color: #dd9510;
+    border-color: #dd9510;
+    box-shadow: 0 0 0 0.25rem rgba(251, 173, 28, 0.5);
+}
+  .btn-check:checked + .btn-custom-1, .btn-check:active + .btn-custom-1, .btn-custom-1:active, .btn-custom-1.active, .show > .btn-custom-1.dropdown-toggle {
+    color: #fff;
+    background-color: #dd9510;
+    border-color: #dd9510;
+}
+  .btn-check:checked + .btn-custom-1:focus, .btn-check:active + .btn-custom-1:focus, .btn-custom-1:active:focus, .btn-custom-1.active:focus, .show > .btn-custom-1.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(251, 173, 28, 0.5);
+}
+  .btn-custom-1:disabled, .btn-custom-1.disabled {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #343a40;
+  color: white;
+  padding-top: 20px;
+}
+
+.sidebar .nav-link {
+  color: white;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #495057;
+}
+
+/* Estilo do conteúdo principal */
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.content-header {
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  border-bottom: 1px solid #dee2e6;
+}
